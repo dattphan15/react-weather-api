@@ -10,7 +10,7 @@ For this API demonstration, we'll use the [OpenWeatherMap API](https://openweath
 
 ## Part 2
 
-The next step of the assessment is to display the data for today, and match the following mock:
+The next step is to display the data for today, and match the following mock:
 
 ![Tuesday](public/images/weather.png)
 
