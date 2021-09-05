@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# React Weather API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple Weather API using React as the frontend framework.
 
-## Available Scripts
+## Part 1
 
-In the project directory, you can run:
+The specific data that we'll want to have is the high and low temperatures for today and the next 4 days of any location of our choice (location could be hardcoded), along with some data that will help us decide which weather icon to display (this could be an ID or a string such as "partially cloudy", it will depend on the API we choose).
 
-### `yarn start`
+For this API demonstration, we'll use the [OpenWeatherMap API](https://openweathermap.org/api), which is free for use, but will require us to sign-up to get an API key (most APIs will).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Part 2
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The next step of the assessment is to display the data for today, and match the following mock:
 
-### `yarn test`
+![Tuesday](public/images/weather.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+We want to use the data that was received from the API to do sot. Note: you may have to convert the min and max temperatures from Kelvin to Centigrade or Fahrenheit.
 
-### `yarn build`
+## Part 3
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The third and last step of the assessment is to expand what you wrote in part 2 to create a 5 day forecast that looks as follows:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Week](public/images/weather2.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+When finished, the application should look like this:
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Final](public/images/weather3.png)
