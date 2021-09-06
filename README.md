@@ -12,7 +12,7 @@ For this API demonstration, we'll use the [OpenWeatherMap API](https://openweath
 
 The next step is to display the data for today, and match the following mock:
 
-![Tuesday](public/images/weather.png)
+![Tuesday](frontend/public/images/weather.png)
 
 We want to use the data that was received from the API to do sot. Note: you may have to convert the min and max temperatures from Kelvin to Centigrade or Fahrenheit.
 
@@ -20,8 +20,8 @@ We want to use the data that was received from the API to do sot. Note: you may 
 
 The third and last step of the assessment is to expand what you wrote in part 2 to create a 5 day forecast that looks as follows:
 
-![Week](public/images/weather2.png)
+![Week](frontend/public/images/weather2.png)
 
 When finished, the application should look like this:
 
-![Final](public/images/weather3.png)
+![Final](frontend/public/images/weather3.png)
