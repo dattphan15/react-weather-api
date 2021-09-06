@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
-console.log(process.env.REACT_APP_WEATHER_API_KEY);
+const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
+const URL = `https://api.openweathermap.org/data/2.5/onecall?lat=49.24&lon=122.98&exclude=current,minutely,hourly,alerts&appid=${API_KEY}`;
 
 class App extends Component {
   constructor(props) {
@@ -11,8 +11,25 @@ class App extends Component {
     };
   }
 
+  componentDidMount() {
+    fetch({ URL })
+      .then((res) => res.json())
+      .then((json) => {
+        this.setState({
+          isLoaded: true,
+          items: json,
+        });
+      });
+  }
+
   render() {
-    return <div className="App">hello</div>;
+    let { isLoaded, items } = this.state;
+
+    if (!isLoaded) {
+      return <div>Loading...</div>;
+    } else {
+      return <div className="App">Data has been loaded</div>;
+    }
   }
 }
 
